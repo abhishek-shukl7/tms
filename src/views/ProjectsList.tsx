@@ -27,6 +27,7 @@ const ProjectsList: React.FC = () => {
         try {
           const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjZkMTY4MWE1YzA5YTA2NDYxMjVhNTRjIiwiaWF0IjoxNzI2NDczNzgwLCJleHAiOjE3MjY0NzczODB9.4KI72FSDR9KscrSZ4W2vDjk3oiqFn1PgRLzL6rTm2GM"; 
           
+          
           const response = await axios.get('http://localhost:3001/api/project/getAll?status='+selectedItem, {
             headers: {
               Authorization: `Bearer ${token}` 
